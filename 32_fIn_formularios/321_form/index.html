@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="css.css"/>
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form name="formulario" method="post" action="/send.php"/>
+      <fieldset>
+        <legend>Datos personales</legend>
+
+        Nombre de ususario:
+        <input type="text" name="nombre" placeholder="Por ej: John Smith" tabindex="2"/>
+
+        Apellidos:
+        <input type="text" name="nombre" placeholder="Por ej: John Smith"/ tabindex="3">
+        Edad:
+        <input type="number" name="edad" min="18" max="100" placeholder="18"/ tabindex="1">
+
+        Sexo:
+        <input type="radio" name="sexo" value="H" /> Hombre
+        <input type="radio" name="sexo" value="M" /> Mujer
+      </fieldset>
+    </form>
+  </body>
+</html>

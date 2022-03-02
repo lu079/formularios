@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="css.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form name="formulario" method="post" action="/sende.php" enctype="multipart/form-data">
+       <p>Selecciona la fecha indicada</p>
+        <input type="date" name="fecha" min="2018-03-25" max="2018-05-25" step="2"/>
+       <input type="time" name="hora" min="18:00" max="21:00" step="3600" list="times"/>
+       <datalist id="times">
+           <option value="17:00:00"></option>
+           <option value="18:00:00"></option>
+           <option value="19:00:00"></option>
+           <option value="20:00:00"></option>
+           <option value="21:00:00"></option>
+           <option value="22:00:00"></option>
+       </datalist>
+
+    <input type="month" name="mes"
+           value="2018-05" min="2018-02" max="2018-06" step="2"/>
+    <input type="week" name="semana"
+           value="2018-W18" min="2018-W10" max="2018-W20" step="2"/>
+
+<p>
+    Sexo:
+    <input type="radio" name="genero" value="H"/> Hombre
+    <input type="radio" name="genero" value="M"/> Mujer
+</p>
+<input type="checkbox" name="empresa" checked/>
+Eres autónomo o empresa?
+<hr>
+
+Seleciona la opción deseada:
+<select name="combo" multiple>
+    <optgroup label="Opciones básicas"></optgroup>
+       <option value="1" label="Opción 1"></option>
+    </optgroup>
+
+    <optgroup label="Opciones básicas">
+       <option value="2" label="Opción 2"></option>
+       <option value="3" label="Opción 3"></option>
+    </optgroup>
+</select>
+
+<input type="text" list="cuidades"/>
+<datalist id="ciudades">
+    <option value="1">Lima</option>
+    <option value="2">Santiago</option>
+    <option value="3">Caracas</option>
+</datalist> 
+</form>
+
+
+<form name="formulario" method="post" action="/sende.php" enctype="multipart/form-data">
+<br>
+Selecciona el color
+<input type="color" name="color" value="#1bf44a">
+<br>
+Adjunta tu CV
+<input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple>
+</form>
+
+</body>
+</html>
